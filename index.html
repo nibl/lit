@@ -51,17 +51,16 @@
 
     <div class="container">
 
-<!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h1>Lit</h1>
-        <p>is an app to teach reading to adults on smartphones and in web browsers. One billion people worldwide cannot read. Technology now gives people the means to learn anywhere, anytime. It's in their pockets.</p>
+        <h2>One billion people worldwide cannot read. We can change that.</h2>
+        <p>Lit is an app to teach reading to adults on smartphones and in web browsers. Technology now gives people the means to learn anywhere, anytime. Learning power is in their pockets. Join the <a href="#forum">forum</a> and get involved.</p>
         <div>
+
         <iframe width="560" height="315" src="http://www.youtube.com/embed/mCmozWLo4Qs?rel=0" frameborder="0" allowfullscreen></iframe>
+
         </div>
         
-<!--
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
--->
       </div>
 
       <!-- Example row of columns -->
@@ -70,19 +69,21 @@
            <p></p>         
         </div>
         <div class="span8">
-          <h2>We need your help</h2>
+          <h1>We need your help</h1>
            <p>Here are the main tasks. Keep in mind that users cannot read properly. They do not use the Internet or text-based media the way you do. Everything, including support will need to be audio-visual:</p>
            <ul>
-             <li>Create lessons</li>
-             <li>Code javascript (PhoneGap/Cordova for Android)</li>
-             <li>Design an entirely audio-visual UI/UX for people who cannot read</li>
-             <li>Design/Draw expressive images</li>
-             <li>Record voice-overs</li>
-             <li>Find and reach out to potential users</li>
+             <li>Create lessons <a class="btn btn-mini btn-primary" data-toggle="collapse" data-target="#task-lessons"> Details &raquo;</a></li><p id="task-lessons" class="collapse">Lit takes a sound-based (phonetic) approach to reading. Students learn what sounds a letter may stand for, then sounds out words. You do <b>not</b> need any knowledge of linguistics to create lessons. It's knowledge you have gained inherintly while learning to read yourself.<br />You may find creating lessons an interesting challenge. Especially in English, where spelling and speech have drifted far apart. It's a lot trickier than you may think. Contribute via our Lesson Pad. It's part of the project Wiki on GitHub. <a class="btn btn-mini btn-primary" href="https://github.com/nibl/lit/wiki/Lesson-Pad"><i class="icon-pencil icon-white"></i> Lesson Pad</a></p>
+        
+             <li>Code javascript <a class="btn btn-mini btn-primary" data-toggle="collapse" data-target="#task-js"> &raquo;</a></li><p id="task-js" class="collapse">We are using Javascript so the same code can be used in web browsers and on mobile devices by wrapping the code with PhoneGap (Cordova). Browsers and Android will be the initial platforms, since these have the widest usage and lowest access cost. iOS developers are encouraged to make the necessary changes for iPhone and iPad. Using PhoneGap this should be fairly swift.</p>
+             
+             <li>Design an entirely audio-visual UI/UX <a class="btn btn-mini btn-primary" data-toggle="collapse" data-target="#task-ui"> &raquo;</a></li><p id="task-ui" class="collapse">Here's a challenge for a UI designer. Most user interfaces depend on text. Lit cannot. An exception are games interfaces and educational programs for very young children. However, we have to guide adults through an entirely audio-visual environment.</p>
+             
+             <li>Design graphics <a class="btn btn-mini btn-primary" data-toggle="collapse" data-target="#task-graphics"> &raquo;</a></li><p id="task-graphics" class="collapse">The UI graphics need to &quot;talk&quot; to the user even more than usual. We have no text hints to rely on.</p>
+             
+             <li>Record voice-overs <a class="btn btn-mini btn-primary" data-toggle="collapse" data-target="#task-recording"> &raquo;</a></li><p id="task-recording" class="collapse">All student instruction is spoken. We need people to record voice-overs. These will be synchronized with the visual elements to provide instructions in lessons, quizes and hints. The texts to be spoken will be in the Lesson Pad.</p>
+             
+             <li>Reach out to potential users <a class="btn btn-mini btn-primary" data-toggle="collapse" data-target="#task-locate"> &raquo;</a></li><p id="task-locate" class="collapse">This is possibly the biggest challenge! Think about it. How do we tell people who cannot read text-based media about the program? If we cannot reach the users the project fails. This task is vital to success. <br />We can inform people who can read to tell those who cannot. Radio stations are another way. We could ask local radio stations to help get the word out. This will need to be very creative so that radio stations benefit, and it doesn't feel in any way condescending towards functionally illiterate listeners.</p>
            </ul>
-<!--
-          <p><a class="btn" href="#">View details &raquo;</a></p>
--->
        </div>
         <div class="span2">
           <p></p>
@@ -101,7 +102,7 @@
   scrolling="no"
   frameborder="0"
   width="900"
-  height="700">
+  height="400">
   </iframe>
 
   <script type="text/javascript">
@@ -111,7 +112,6 @@
   </div>
 </section>
 <!-- /forum -->
-
 
       <hr>
 
