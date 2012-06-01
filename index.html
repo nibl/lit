@@ -22,13 +22,7 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-  </head>
+      </head>
 
   <body>
 
@@ -43,10 +37,12 @@
           <a class="brand" href="#">LitApp</a>
           <div class="nav-collapse">
             <ul class="nav">
+<!--
               <li class="active"><a href="index.html">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="forum.html">Forum</a></li>
-              <li><a href="#contact">Contact</a></li>
+-->
+              <li><a href="#forum">Forum</a></li>
+              <li><a href="http://contactme.com/4fa346d1a45c430001000c6a">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -58,59 +54,78 @@
 <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h1>Lit</h1>
-        <p>Lit is an app to teach reading to adults on smartphones and in web browsers. One billion people worldwide cannot read. Technology now gives people the means to learn anywhere, anytime. It's in their pockets.</p>
+        <p>is an app to teach reading to adults on smartphones and in web browsers. One billion people worldwide cannot read. Technology now gives people the means to learn anywhere, anytime. It's in their pockets.</p>
+        <div>
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/mCmozWLo4Qs?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+<!--
         <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+-->
       </div>
 
-          <!-- Example row of columns -->
+      <!-- Example row of columns -->
       <div class="row">
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>          
-           
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+        <div class="span2">
+           <p></p>         
         </div>
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <div class="span8">
+          <h2>We need your help</h2>
+           <p>Here are the main tasks. Keep in mind that users cannot read properly. They do not use the Internet or text-based media the way you do. Everything, including support will need to be audio-visual:</p>
+           <ul>
+             <li>Create lessons</li>
+             <li>Code javascript (PhoneGap/Cordova for Android)</li>
+             <li>Design an entirely audio-visual UI/UX for people who cannot read</li>
+             <li>Design/Draw expressive images</li>
+             <li>Record voice-overs</li>
+             <li>Find and reach out to potential users</li>
+           </ul>
+<!--
           <p><a class="btn" href="#">View details &raquo;</a></p>
+-->
        </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+        <div class="span2">
+          <p></p>
         </div>
       </div>
 
+<a href="forum"></a>
+<section class="forum" id="forum">
+  <div class="page-header">
+    <h2>Forum</h2>
+    <h4>Join us now</h4>
+    <p>The forum below is where we discuss the project and tasks. It's a Google Group (litapp). If you already have a Google account, you can jump right. Please tell us what you would like to do.</p>
+     
+  <iframe id="forum_embed"
+  src="javascript:void(0)"
+  scrolling="no"
+  frameborder="0"
+  width="900"
+  height="700">
+  </iframe>
+
+  <script type="text/javascript">
+  document.getElementById("forum_embed").src ="https://groups.google.com/forum/embed/?place=forum/litapp" +"&showsearch=true&showpopout=true&parenturl=" +encodeURIComponent(window.location.href);
+  </script>
+
+  </div>
+</section>
+<!-- /forum -->
+
+
       <hr>
-
-<iframe id="forum_embed"
-src="javascript:void(0)"
-scrolling="no"
-frameborder="0"
-width="900"
-height="700">
-</iframe>
-
-<script type="text/javascript">
-document.getElementById("forum_embed").src ="https://groups.google.com/forum/embed/?place=forum/litapp" +"&showsearch=true&showpopout=true&parenturl=" +encodeURIComponent(window.location.href);
-</script>
-         
-
-
-
-      <hr>
-
-
 
       <footer>
-        <p>&copy; Company 2012</p>
+        <p>&copy; The Lit Project. <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.</p>
       </footer>
 
     </div> <!-- /container -->
 
     <!-- Le javascript
     ================================================== -->
+<!-- ContactMe Form-->
+    <script type="text/javascript">var _cmo = {form: '4fa346d1a45c430001000c6a', text: 'Contact', align: 'left', valign: 'middle', lang: 'en', background_color: '#092054'}; (function() {var cms = document.createElement('script'); cms.type = 'text/javascript'; cms.async = true; cms.src = ('https:' == document.location.protocol ? 'https://d1uwd25yvxu96k.cloudfront.net' : 'http://static.contactme.com') + '/widgets/tab/v1/tab.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cms, s);})();</script>
+        
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap-transition.js"></script>
